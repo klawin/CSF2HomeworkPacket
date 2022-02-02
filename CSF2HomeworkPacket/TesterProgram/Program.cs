@@ -56,6 +56,26 @@ namespace TesterProgram
             Login l2 = new Login("Student","Password");
             Console.WriteLine(l2);
 
+
+            Console.WriteLine("\nContact Information");
+
+            ContactInfo c1 = new ContactInfo();
+            c1.StreetAddress = "700 E 4th St";
+            c1.City = "Kansas City";
+            c1.State = "MO";
+            c1.Zip = "64106";
+            c1.Phone = "8167995001";
+            c1.Email = "kaylannguyen@outlook.com";
+
+            Console.WriteLine("\nStreet Address: {0}" +
+                "\nCity: {1}" +
+                "\nState: {2}" +
+                "\nZip: {3}" +
+                "\nPhone: {4}" +
+                "\nE-Mail: {5}", c1.StreetAddress, c1.City, c1.State, c1.Zip, c1.Phone, c1.Email);
+
+            ContactInfo c2 = new ContactInfo("6442 E 13th St", "Kansas City", "MO", "64126", "8167995001", "kaninn0106@gmail.com");
+            Console.WriteLine(c2);
         }//end Main()
     }//end class
 }//end namespace

@@ -44,6 +44,18 @@ namespace TesterProgram
             Vehicle v2 = new Vehicle("Chevrolet", "Cruze", 2013, 2800f);
             Console.WriteLine(v2);
 
+            Console.WriteLine("\nLogin");
+
+            Login l1 = new Login();
+            l1.UserName = "student";
+            l1.Password = "password";
+
+            Console.WriteLine("\nUsername: {0}" +
+                "\nPassword: {1}", l1.UserName, l1.Password);
+
+            Login l2 = new Login("Student","Password");
+            Console.WriteLine(l2);
+
         }//end Main()
     }//end class
 }//end namespace

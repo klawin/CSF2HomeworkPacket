@@ -13,7 +13,7 @@ namespace TesterProgram
         {
             Console.Title = "Tester Program";
 
-            Console.WriteLine("Tester Program");
+            Console.WriteLine("Students");
 
             Student s1 = new Student();
             s1.FirstName = "Kayla";
@@ -27,6 +27,22 @@ namespace TesterProgram
 
             Student s2 = new Student("Quentin", "Carter", "54321", 3.8f);
             Console.WriteLine(s2);
+
+            Console.WriteLine("\nVehicles");
+
+            Vehicle v1 = new Vehicle();
+            v1.Make = "Honda";
+            v1.Model = "CR-V";
+            v1.Year = 2011;
+            v1.Weight = 3000;
+
+            Console.WriteLine("\nMake: {0}" +
+                "\nModel: {1}" +
+                "\nYear: {2}" +
+                "\nWeight: {3} lbs", v1.Make, v1.Model, v1.Year, v1.Weight);
+
+            Vehicle v2 = new Vehicle("Chevrolet", "Cruze", 2013, 2800f);
+            Console.WriteLine(v2);
 
         }//end Main()
     }//end class

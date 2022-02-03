@@ -66,12 +66,12 @@ namespace ClassesLibrary
         public override string ToString()
         {
             //return base.ToString();
-            return string.Format("\nStreet Address: {0}" +
+            return string.Format("\nContact Info:\nStreet Address: {0}" +
                 "\nCity: {1}" +
                 "\nState: {2}" +
                 "\nZip: {3}" +
                 "\nPhone: {4}" +
-                "\nE-Mail: {5}", StreetAddress, City, State, Zip, Phone, Email);
+                "\nE-Mail: {5}\n", StreetAddress, City, State, Zip, Phone, Email);
         }
 
     }//end ContactInfo

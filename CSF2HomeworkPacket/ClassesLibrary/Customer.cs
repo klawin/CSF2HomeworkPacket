@@ -44,7 +44,7 @@ namespace ClassesLibrary
             //return base.ToString();
             return string.Format("\nName: {0}, {1}" +
                 "\nCustomer ID: {2}" +
-                "\nContact Info: \n{3}", LastName, FirstName, CustomerId, ContactInformation);
+                "\n{3}", LastName, FirstName, CustomerId, ContactInformation);
         }
         public Customer()
         {

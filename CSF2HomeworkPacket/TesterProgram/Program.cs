@@ -91,6 +91,25 @@ namespace TesterProgram
 
             Customer c2 = new Customer("Quentin", "Carter", "56132", ci2);
             Console.WriteLine(c2);
+
+            Console.WriteLine("\nCredit Card Account");
+
+            CreditCardAccount cc1 = new CreditCardAccount();
+            cc1.AccountNumber = 1234567;
+            cc1.Balance = 5000;
+            cc1.AnnualInterestRate = 5;
+            cc1.IsPastDue = false;
+            cc1.CustomerInfo = c1;
+
+            Console.WriteLine("\nCustomer Info: {0}" +
+                "\nAccount Number: {1}" +
+                "\nBalance: {2:c}" +
+                "\nAnnual Interest Rate: {3}%" +
+                "\nPast Due?: {4}", cc1.CustomerInfo, cc1.AccountNumber, cc1.Balance, cc1.AnnualInterestRate, cc1.IsPastDue ? "YES" : "NO");
+
+            CreditCardAccount cc2 = new CreditCardAccount(c2, 7654321, -2.99m, 5, true);
+            Console.WriteLine(cc2);
+
         }//end Main()
     }//end class
 }//end namespace

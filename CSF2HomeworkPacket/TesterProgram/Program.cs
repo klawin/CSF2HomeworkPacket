@@ -59,22 +59,37 @@ namespace TesterProgram
 
             Console.WriteLine("\nContact Information");
 
-            ContactInfo c1 = new ContactInfo();
-            c1.StreetAddress = "700 E 4th St";
-            c1.City = "Kansas City";
-            c1.State = "MO";
-            c1.Zip = "64106";
-            c1.Phone = "8167995001";
-            c1.Email = "kaylannguyen@outlook.com";
+            ContactInfo ci1 = new ContactInfo();
+            ci1.StreetAddress = "700 E 4th St";
+            ci1.City = "Kansas City";
+            ci1.State = "MO";
+            ci1.Zip = "64106";
+            ci1.Phone = "8167995001";
+            ci1.Email = "kaylannguyen@outlook.com";
 
             Console.WriteLine("\nStreet Address: {0}" +
                 "\nCity: {1}" +
                 "\nState: {2}" +
                 "\nZip: {3}" +
                 "\nPhone: {4}" +
-                "\nE-Mail: {5}", c1.StreetAddress, c1.City, c1.State, c1.Zip, c1.Phone, c1.Email);
+                "\nE-Mail: {5}", ci1.StreetAddress, ci1.City, ci1.State, ci1.Zip, ci1.Phone, ci1.Email);
 
-            ContactInfo c2 = new ContactInfo("6442 E 13th St", "Kansas City", "MO", "64126", "8167995001", "kaninn0106@gmail.com");
+            ContactInfo ci2 = new ContactInfo("6442 E 13th St", "Kansas City", "MO", "64126", "8167995001", "kaninn0106@gmail.com");
+            Console.WriteLine(ci2);
+
+            Console.WriteLine("\nCustomer");
+
+            Customer c1 = new Customer();
+            c1.FirstName = "Kayla";
+            c1.LastName = "Nguyen";
+            c1.CustomerId = "12345";
+            c1.ContactInformation = ci1;
+
+            Console.WriteLine("\nName: {0}, {1}" +
+                "\nCustomer ID: {2}" +
+                "\nContact Info: \n{3}",c1.LastName, c1.FirstName, c1.CustomerId, c1.ContactInformation);
+
+            Customer c2 = new Customer("Quentin", "Carter", "56132", ci2);
             Console.WriteLine(c2);
         }//end Main()
     }//end class

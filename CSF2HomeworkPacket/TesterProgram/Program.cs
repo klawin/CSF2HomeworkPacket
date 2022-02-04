@@ -13,7 +13,7 @@ namespace TesterProgram
         {
             Console.Title = "Tester Program";
 
-            Console.WriteLine("Students");
+            Console.WriteLine("STUDENTS");
 
             Student s1 = new Student();
             s1.FirstName = "Kayla";
@@ -28,7 +28,7 @@ namespace TesterProgram
             Student s2 = new Student("Quentin", "Carter", "54321", 3.8f);
             Console.WriteLine(s2);
 
-            Console.WriteLine("\nVehicles");
+            Console.WriteLine("\nVEHICLES");
 
             Vehicle v1 = new Vehicle();
             v1.Make = "Honda";
@@ -57,7 +57,7 @@ namespace TesterProgram
             Console.WriteLine(l2);
 
 
-            Console.WriteLine("\nContact Information");
+            Console.WriteLine("\nCONTACT INFORMATION");
 
             ContactInfo ci1 = new ContactInfo();
             ci1.StreetAddress = "700 E 4th St";
@@ -77,7 +77,7 @@ namespace TesterProgram
             ContactInfo ci2 = new ContactInfo("6442 E 13th St", "Kansas City", "MO", "64126", "8167995001", "kaninn0106@gmail.com");
             Console.WriteLine(ci2);
 
-            Console.WriteLine("\nCustomer");
+            Console.WriteLine("\nCUSTOMER");
 
             Customer c1 = new Customer();
             c1.FirstName = "Kayla";
@@ -92,7 +92,7 @@ namespace TesterProgram
             Customer c2 = new Customer("Quentin", "Carter", "56132", ci2);
             Console.WriteLine(c2);
 
-            Console.WriteLine("\nCredit Card Account");
+            Console.WriteLine("\nCREDIT CARD ACCOUNT");
 
             CreditCardAccount cc1 = new CreditCardAccount();
             cc1.AccountNumber = 1234567;
@@ -109,6 +109,20 @@ namespace TesterProgram
 
             CreditCardAccount cc2 = new CreditCardAccount(c2, 7654321, -2.99m, 5, true);
             Console.WriteLine(cc2);
+
+            Console.WriteLine("\nBOOK");
+
+            Book b1 = new Book();
+            b1.Title = "The Cellar";
+            b1.Author = "Natasha Preston";
+            b1.NumberOfPages = 368;
+
+            Console.WriteLine("\nTitle: {0}\n" +
+                "Author: {1}\n" +
+                "Number of pages: {2}\n", b1.Title, b1.Author, b1.NumberOfPages);
+
+            Book b2 = new Book("The Summer I Turned Pretty", "Jenny Han", 304);
+            Console.WriteLine(b2);
 
         }//end Main()
     }//end class
